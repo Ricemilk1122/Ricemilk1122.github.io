@@ -15,6 +15,14 @@ const config = {
       template: './src/index.html',
     }),
   ],
+  module: {
+    rules: [
+      {
+        test: /\.jsx?$/,
+        use: 'babel-loader',
+      },
+    ],
+  },
 };
 
 module.exports = config;
