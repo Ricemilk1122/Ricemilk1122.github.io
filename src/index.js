@@ -1,2 +1,2 @@
 import App from './App';
-document.body.appendChild(App());
+document.getElementById('app').appendChild(App());
