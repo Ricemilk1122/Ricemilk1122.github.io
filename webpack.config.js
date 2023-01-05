@@ -13,6 +13,7 @@ const config = {
     new HtmlWebpackPlugin({
       title: 'Ricemilk1122 Blog since 2023',
       template: './src/index.html',
+      favicon: './img/favicon.gif',
     }),
   ],
   module: {
