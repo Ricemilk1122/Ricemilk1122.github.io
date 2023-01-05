@@ -26,6 +26,13 @@ const config = {
         test: /\.less$/,
         use: ['style-loader', 'css-loader', 'less-loader'],
       },
+      {
+        test: /\.(png|jpg|jpeg|gif|svg)$/,
+        type: 'asset',
+        generator: {
+          filename: 'img/[name]_[hash][ext]',
+        },
+      },
     ],
   },
 };

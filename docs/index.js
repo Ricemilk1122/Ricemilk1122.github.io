@@ -216,7 +216,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"2a4a307e38372b7807fd.jpg\";\n\n//# sourceURL=webpack://blog/./img/home.jpg?");
+eval("module.exports = __webpack_require__.p + \"img/home_2a4a307e38372b7807fd.jpg\";\n\n//# sourceURL=webpack://blog/./img/home.jpg?");
 
 /***/ })
 
