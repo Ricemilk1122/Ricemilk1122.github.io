@@ -2,18 +2,33 @@ html {
   height: 100%;
 }
 
-body {
+body.light {
   height: 100%;
   background-color: pink;
   font-family: 'Times New Roman', Times, serif;
+
+  #app {
+    height: 100%;
+    color: #fff;
+    font-size: 330px;
+    text-align: right;
+    user-select: none;
+    background-image: url('../img/home.jpg');
+    background-repeat: no-repeat;
+    background-size: 50%;
+  }
 }
 
-#app {
+body.dark {
   height: 100%;
-  color: #fff;
-  font-size: 330px;
-  text-align: right;
-  background-image: url('../img/home.jpg');
-  background-repeat: no-repeat;
-  background-size: 50%;
+  background-color: black;
+  font-family: 'Times New Roman', Times, serif;
+
+  #app {
+    height: 100%;
+    color: #fff;
+    font-size: 330px;
+    text-align: right;
+    user-select: none;
+  }
 }
