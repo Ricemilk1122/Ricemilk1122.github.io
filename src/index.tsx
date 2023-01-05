@@ -1,9 +1,11 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import App from './App.jsx';
+import App from './App';
 
 const render = () => {
-  const root = createRoot(document.getElementById('app'));
+  const app = document.getElementById('app') || document.body;
+  const root = createRoot(app);
   root.render(<App />);
 };
+
 render();
