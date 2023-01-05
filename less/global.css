@@ -1,0 +1,9 @@
+body {
+  background-color: pink;
+}
+
+#app {
+  color: red;
+  font-size: 300px;
+  text-align: center;
+}
