@@ -10,13 +10,13 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/App.tsx":
-/*!*********************!*\
-  !*** ./src/App.tsx ***!
-  \*********************/
+/***/ "./src/article.tsx":
+/*!*************************!*\
+  !*** ./src/article.tsx ***!
+  \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _less_global_less__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../less/global.less */ \"./less/global.less\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _hooks_switchTheme__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./hooks/switchTheme */ \"./src/hooks/switchTheme.ts\");\n\n\n\nvar App = function App() {\n  var toggleTheme = (0,_hooks_switchTheme__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n  var name = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)('Hello Ricemilk')[0];\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(\"div\", {\n    onClick: toggleTheme\n  }, name);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);\n\n//# sourceURL=webpack://blog/./src/App.tsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\");\n/* harmony import */ var _pages_article__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/article */ \"./src/pages/article/index.tsx\");\n\n\n\nvar render = function render() {\n  var app = document.getElementById('app') || document.body;\n  var root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(app);\n  root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_article__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null));\n};\nrender();\n\n//# sourceURL=webpack://blog/./src/article.tsx?");
 
 /***/ }),
 
@@ -30,13 +30,23 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/index.tsx":
-/*!***********************!*\
-  !*** ./src/index.tsx ***!
-  \***********************/
+/***/ "./src/pages/article/Article/index.tsx":
+/*!*********************************************!*\
+  !*** ./src/pages/article/Article/index.tsx ***!
+  \*********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\");\n/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App */ \"./src/App.tsx\");\n\n\n\nvar render = function render() {\n  var app = document.getElementById('app') || document.body;\n  var root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(app);\n  root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_App__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null));\n};\nrender();\n\n//# sourceURL=webpack://blog/./src/index.tsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _less_global_less__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../less/global.less */ \"./less/global.less\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _hooks_switchTheme__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../hooks/switchTheme */ \"./src/hooks/switchTheme.ts\");\n\n\n\nvar Article = function Article() {\n  var toggleTheme = (0,_hooks_switchTheme__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n  var name = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)('Article Page')[0];\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement((react__WEBPACK_IMPORTED_MODULE_1___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(\"div\", {\n    onClick: toggleTheme\n  }, name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(\"a\", {\n    href: \"/\"\n  }, \"Back\"));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Article);\n\n//# sourceURL=webpack://blog/./src/pages/article/Article/index.tsx?");
+
+/***/ }),
+
+/***/ "./src/pages/article/index.tsx":
+/*!*************************************!*\
+  !*** ./src/pages/article/index.tsx ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _Article__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Article */ \"./src/pages/article/Article/index.tsx\");\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_Article__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n\n//# sourceURL=webpack://blog/./src/pages/article/index.tsx?");
 
 /***/ }),
 
@@ -341,7 +351,7 @@ eval("module.exports = __webpack_require__.p + \"img/home_2a4a307e38372b7807fd.j
 /******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
 /******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
 /******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
-/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 		__webpack_require__.p = scriptUrl + "../";
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */
@@ -352,7 +362,7 @@ eval("module.exports = __webpack_require__.p + \"img/home_2a4a307e38372b7807fd.j
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"main": 0
+/******/ 			"article": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -380,7 +390,7 @@ eval("module.exports = __webpack_require__.p + \"img/home_2a4a307e38372b7807fd.j
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.tsx");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/article.tsx");
 /******/ 	
 /******/ })()
 ;

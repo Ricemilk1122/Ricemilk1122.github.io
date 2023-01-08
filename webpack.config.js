@@ -3,17 +3,29 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const config = {
   mode: 'development',
-  entry: './src/index.tsx',
+  entry: {
+    home: './src/home.tsx',
+    article: './src/article.tsx',
+  },
   output: {
     path: path.resolve(__dirname, 'docs'),
-    filename: 'index.js',
+    filename: 'js/[name].[hash].js',
     clean: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Ricemilk1122 Blog since 2023',
-      template: './src/index.html',
       favicon: './img/favicon.gif',
+      template: './src/index.html',
+      filename: 'index.html',
+      chunks: ['home'],
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Article',
+      favicon: './img/favicon.gif',
+      template: './src/index.html',
+      filename: 'article.html',
+      chunks: ['article'],
     }),
   ],
   module: {
