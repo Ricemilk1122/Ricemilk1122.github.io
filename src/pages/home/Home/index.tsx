@@ -2,6 +2,7 @@ import '../../../../less/global.less';
 
 import React, { useState } from 'react';
 import useSwitchTheme from '../../../hooks/switchTheme';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   const toggleTheme = useSwitchTheme();
@@ -9,7 +10,7 @@ const Home = () => {
   return (
     <>
       <div onClick={toggleTheme}>{name}</div>
-      <a href="article.html">Articles</a>
+      <Link to="article">Articles</Link>
     </>
   );
 };

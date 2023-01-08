@@ -1,11 +1,11 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import Home from './pages/home';
+import RouteApp from './routes';
 
 const render = () => {
   const app = document.getElementById('app') || document.body;
   const root = createRoot(app);
-  root.render(<Home />);
+  root.render(<RouteApp />);
 };
 
 render();

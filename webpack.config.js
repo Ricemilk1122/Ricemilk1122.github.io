@@ -3,13 +3,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const config = {
   mode: 'development',
-  entry: {
-    home: './src/home.tsx',
-    article: './src/article.tsx',
-  },
+  entry: '/src/index.tsx',
   output: {
     path: path.resolve(__dirname, 'docs'),
-    filename: 'js/[name].[hash].js',
+    filename: 'js/index.js',
     clean: true,
   },
   plugins: [
@@ -18,14 +15,6 @@ const config = {
       favicon: './img/favicon.gif',
       template: './src/index.html',
       filename: 'index.html',
-      chunks: ['home'],
-    }),
-    new HtmlWebpackPlugin({
-      title: 'Article',
-      favicon: './img/favicon.gif',
-      template: './src/index.html',
-      filename: 'article.html',
-      chunks: ['article'],
     }),
   ],
   module: {
